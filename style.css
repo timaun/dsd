@@ -1,0 +1,117 @@
+:root {
+  --main-bg-color: #f4f4f9;
+  --header-bg-color: #222;
+  --text-color: #333;
+  --link-color: #007bff;
+  --accent-color-roblox: #00b0ff;
+  --accent-color-cs2: #ff8c00;
+  --footer-bg-color: #333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 700;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent-color-roblox);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+h2 {
+  color: var(--header-bg-color);
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: #eee;
+  font-weight: 700;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.news-card, .feature-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.download-btn {
+  text-decoration: none;
+  background-color: var(--accent-color-cs2);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.download-btn:hover {
+  background-color: #d17500;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
